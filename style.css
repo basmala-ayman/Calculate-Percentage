@@ -84,6 +84,7 @@ h3 {
 }
 
 .content input {
+    font-family: inherit;
     border: none;
     font-size: 20px;
     width: 100px;
