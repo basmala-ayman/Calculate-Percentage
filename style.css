@@ -1,0 +1,127 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+h1,
+h3 {
+    color: darkcyan;
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkcyan;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    h3 {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    margin-top: 50px;
+    border: 1px solid darkcyan;
+    border-radius: 7px;
+}
+
+.content .item {
+    width: 17%;
+    text-align: center;
+}
+
+.content .item:nth-child(2) {
+    border-left: 1px solid darkcyan;
+    border-right: 1px solid darkcyan;
+}
+
+.content .item:last-of-type {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content .item {
+        width: 100%;
+    }
+}
+
+.content input {
+    border: none;
+    font-size: 20px;
+    width: 35px;
+    padding: 20px 40px;
+    color: darkcyan;
+}
+
+.content input:focus {
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .content .item:nth-child(2) {
+        border: none;
+        border-top: 1px solid darkcyan;
+        border-bottom: 1px solid darkcyan;
+    }
+}
+
+#calc {
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgba(0, 139, 139, 0.85);
+    border: 1px solid darkcyan;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#calc:hover {
+    background-color: rgba(0, 139, 139);
+    font-size: 21px;
+}
+
+#result {
+    font-size: 20px;
+}
