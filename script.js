@@ -1,5 +1,5 @@
 function calcPercentage(degree, fullMark) {
-  return (Number(degree) / Number(fullMark)) * 100.0;
+  return( (degree / fullMark) * 100.0).toFixed(2);
 }
 
 document.getElementById("calc").onclick = function () {
